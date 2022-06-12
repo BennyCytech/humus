@@ -1,0 +1,576 @@
+﻿@model humus.Models.order
+
+<html dir="rtl">
+
+<h2>חומוס עד הבית</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="table-responsive" style="width: 90%">
+            <table class="table" style="width: 90%">
+                <tr>
+                    <th class="text-right" style="width: 20%">במשקל</th>
+                    <th class="text-right" style="width: 10%">כמות</th>
+                    <th class="text-right" style="width: 40%">סה"כ</th>
+                </tr>
+                <tr>
+                    <td>חצי קילו חומוס - 35₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo1, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum1, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>קילו חומוס - 55₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo2, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum2, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חצי קילו טחינה - 35₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo3, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum3, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו טחינה - 25₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo13, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum13, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חצי קילו גרגרים - 20₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo4, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum4, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו גרגרים - 15₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo5, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum5, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חצי קילו פול - 23₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo6, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum6, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו פול - 17₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo7, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum7, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו פטריות - 28₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo8, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum8, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו חצילים - 23₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo9, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum9, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>פיתה - 2₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo10, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum10, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו חריף - 20₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo11, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum11, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו שום לימון - 30₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo12, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum12, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חצי קילו זיתים - 20₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo14, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum14, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו זיתים - 15₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo15, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum15, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חצי קילו חמוצים - 15₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo16, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum16, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>רבע קילו חמוצים - 10₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo17, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum17, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>חלבה - 20₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo18, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum18, new { htmlAttributes = new { @class = "form-control", @style = "width:100px", @disabled = "disabled" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>כדור פלאפל - 2₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo19, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum19, new { htmlAttributes = new { @class = "form-control", @style = "width:100px", @disabled = "disabled" } })
+                    </td>
+                </tr>
+                @*<tr>
+                    <td>שקשוקה - 8₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo20, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum20, new { htmlAttributes = new { @class = "form-control", @style = "width:100px", @disabled = "disabled" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>שווארמה טבעונית - 10₪</td>
+                    <td>
+                        @Html.EditorFor(model => model.kilo21, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloSum21, new { htmlAttributes = new { @class = "form-control", @style = "width:100px", @disabled = "disabled" } })
+                    </td>
+                </tr>*@
+            </table>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <colgroup>
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 15%;">
+                    <col span="1" style="width: 15%;">
+                </colgroup>
+                <tr>
+                    <th colspan="10" class="text-right">במנה, 32 ש"ח. כל מנה מגיעה עם 2 פיתות, חמוצים, זיתים וחריף. מה לשים על המנה?</th>
+                    <th class="text-right">סה"כ מחיר מנה</th>
+                    <th class="text-right">איזה שם?</th>
+                </tr>
+                <tr>
+                    <td>
+                        טחינה
+                    </td>
+                    <td>
+                        גרגרים
+                    </td>
+                    <td>
+                        פול
+                    </td>
+                    <td>
+                        ביצה ₪3
+                    </td>
+                    <td>
+                        שקשוקה ₪6
+                    </td>
+                    <td>
+                        חצילים ₪8
+                    </td>
+                    <td>
+                        פטריות ₪10
+                    </td>
+                    <td>
+                        פטרוזיליה
+                    </td>
+                    <td>
+                        שמן זית
+                    </td>
+                    <td>
+                        פפריקה
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check11)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check12)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check13)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check14)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check15)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check16)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check17)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check18)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check19)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check110)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum1, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name1, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check21)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check22)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check23)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check24)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check25)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check26)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check27)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check28)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check29)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check210)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum2, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name2, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check31)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check32)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check33)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check34)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check35)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check36)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check37)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check38)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check39)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check310)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum3, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name3, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check41)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check42)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check43)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check44)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check45)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check46)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check47)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check48)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check49)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check410)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum4, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name4, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check51)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check52)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check53)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check54)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check55)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check56)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check57)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check58)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check59)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check510)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum5, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name5, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.check61)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check62)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check63)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check64)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check65)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check66)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check67)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check68)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check69)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.check610)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.sum6, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.name6, new { htmlAttributes = new { @class = "form-control", @style = "width:100px;" } })
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <colgroup>
+                    <col span="1" style="width: 15%;">
+                    <col span="1" style="width: 25%;">
+                    <col span="1" style="width: 70%;">
+                </colgroup>
+                <tr>
+                    <td>סה"כ פריטים במשקל</td>
+                    <td>
+                        @Html.EditorFor(model => model.KiloCount, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>סה"כ מנות</td>
+                    <td>
+                        @Html.EditorFor(model => model.OrderCount, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>סה"כ לתשלום</td>
+                    <td>
+                        @Html.EditorFor(model => model.OrderSum, new { htmlAttributes = new { @class = "form-control", @style = "width:100px" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>צורת תשלום</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.fkPaymentMethod, ViewData["lutPaymentMethod"] as IEnumerable<SelectListItem>, new { @class = "form-control", @style = "width:210px;" })
+                    </td>
+
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>שם</td>
+                    <td>
+                        @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", @style = "width:210px;" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>טלפון</td>
+                    <td>
+                        @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control", @style = "width:210px;" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>כתובת מייל</td>
+                    <td>
+                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", @style = "width:210px;" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>כתובת</td>
+                    <td>
+                        @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control", @style = "width:210px;" } })
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>הערות למשלוח</td>
+                    <td>
+                        @*@Html.TextAreaFor(model => model.remarks, new { htmlAttributes = new { @class = "form-control", @cols = 180, @rows = 110 } })*@
+                        @Html.TextAreaFor(model => model.remarks, new { style = "width:600px !important;height:30px !important;" })
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <p>לבירורים, אורי 0523030922</p>
+    </div>
+}
+</html>

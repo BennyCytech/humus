@@ -1,0 +1,489 @@
+﻿@model IEnumerable<humus.Models.order>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkPaymentMethod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.remarks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.o1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fkMana1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thina1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gargirim1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.egg1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.eggplant1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderSum)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkPaymentMethod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.remarks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.o1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fkMana1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thina1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gargirim1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.egg1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.eggplant1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sum1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderSum)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

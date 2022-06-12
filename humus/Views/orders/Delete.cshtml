@@ -1,0 +1,640 @@
+﻿@model humus.Models.order
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkPaymentMethod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkPaymentMethod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.o1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.o1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fkMana1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fkMana1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thina1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thina1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gargirim1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gargirim1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.egg1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.egg1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eggplant1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eggplant1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sum1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sum1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderCount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderSum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderSum)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
